@@ -1,0 +1,11 @@
+pr=1
+ne=2
+ef=list(range(0))
+while ne < 4000000:
+  np=ne
+  ne = ne+pr
+  num = int(ne)
+  if (num % 2) == 0:  
+    ef.append(ne) 
+  pr=np
+print(sum(ef)+2)
